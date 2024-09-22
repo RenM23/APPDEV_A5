@@ -134,6 +134,7 @@
             AddLevelAttemptBtn.TabIndex = 10;
             AddLevelAttemptBtn.Text = "Add";
             AddLevelAttemptBtn.UseVisualStyleBackColor = true;
+            AddLevelAttemptBtn.Click += AddLevelAttemptBtn_Click;
             // 
             // CancelLevelBtn
             // 

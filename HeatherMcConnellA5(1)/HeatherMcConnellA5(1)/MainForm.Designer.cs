@@ -72,6 +72,7 @@
             RemoveAttemptBtn.TabIndex = 3;
             RemoveAttemptBtn.Text = "Remove Attempt";
             RemoveAttemptBtn.UseVisualStyleBackColor = true;
+            RemoveAttemptBtn.Click += RemoveAttemptBtn_Click;
             // 
             // label1
             // 

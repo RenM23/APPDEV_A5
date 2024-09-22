@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HeatherMcConnellA5_1_.Model;
 
 namespace HeatherMcConnellA5_1_.View
 {
     public partial class AddLevelAttempt : Form
     {
+        public Attempt myAttemptToAdd;
         public AddLevelAttempt()
         {
             InitializeComponent();
@@ -19,6 +21,17 @@ namespace HeatherMcConnellA5_1_.View
 
         private void CancelLevelBtn_Click(object sender, EventArgs e)
         {
+            Close();
+        }
+
+        private void AddLevelAttemptBtn_Click(object sender, EventArgs e)
+        {
+            myAttemptToAdd = new Attempt();
+
+            myAttemptToAdd.FirstName = FirstNameTextBox.Text;
+
+            //MyItemToAdd.Age = int.Parse(itemAgeEntryBox.Text);
+
             Close();
         }
     }
