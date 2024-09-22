@@ -16,5 +16,10 @@ namespace HeatherMcConnellA5_1_.View
         {
             InitializeComponent();
         }
+
+        private void CancelLevelBtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

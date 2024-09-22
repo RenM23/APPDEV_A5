@@ -6,5 +6,10 @@ namespace HeatherMcConnellA5_1_
         {
             InitializeComponent();
         }
+
+        private void AddAttemptBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

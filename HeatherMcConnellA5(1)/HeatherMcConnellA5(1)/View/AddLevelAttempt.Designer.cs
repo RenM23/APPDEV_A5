@@ -143,6 +143,7 @@
             CancelLevelBtn.TabIndex = 11;
             CancelLevelBtn.Text = "Cancel";
             CancelLevelBtn.UseVisualStyleBackColor = true;
+            CancelLevelBtn.Click += CancelLevelBtn_Click;
             // 
             // AddLevelAttempt
             // 

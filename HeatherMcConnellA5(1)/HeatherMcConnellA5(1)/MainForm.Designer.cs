@@ -62,6 +62,7 @@
             AddAttemptBtn.TabIndex = 2;
             AddAttemptBtn.Text = "Add Attempt";
             AddAttemptBtn.UseVisualStyleBackColor = true;
+            AddAttemptBtn.Click += AddAttemptBtn_Click;
             // 
             // RemoveAttemptBtn
             // 
