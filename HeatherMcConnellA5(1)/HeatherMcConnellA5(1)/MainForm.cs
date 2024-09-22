@@ -23,7 +23,7 @@ namespace HeatherMcConnellA5_1_
 
             LevelAttemptsListBox.DataSource = null;
             LevelAttemptsListBox.Items.Clear();
-            LevelAttemptsListBox.DataSource = addLevelAttempt;
+            LevelAttemptsListBox.DataSource = MyAttempts;
         }
 
         private void RemoveAttemptBtn_Click(object sender, EventArgs e)

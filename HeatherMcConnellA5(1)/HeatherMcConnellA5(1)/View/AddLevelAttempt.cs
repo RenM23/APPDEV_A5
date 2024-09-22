@@ -32,7 +32,7 @@ namespace HeatherMcConnellA5_1_.View
 
             //MyItemToAdd.Age = int.Parse(itemAgeEntryBox.Text);
 
-            Close();
+           Close();
         }
     }
 }

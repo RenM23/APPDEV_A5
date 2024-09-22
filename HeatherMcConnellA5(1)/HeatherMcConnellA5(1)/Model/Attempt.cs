@@ -9,7 +9,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace HeatherMcConnellA5_1_.Model
 {
-    internal class Attempt
+    public class Attempt
     {
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
