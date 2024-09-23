@@ -40,6 +40,7 @@
             DateBox = new TextBox();
             AddLevelAttemptBtn = new Button();
             CancelLevelBtn = new Button();
+            ErrorMessageBox = new Label();
             ((System.ComponentModel.ISupportInitialize)ScoreBox).BeginInit();
             SuspendLayout();
             // 
@@ -125,6 +126,7 @@
             DateBox.ReadOnly = true;
             DateBox.Size = new Size(150, 31);
             DateBox.TabIndex = 9;
+            DateBox.TextChanged += DateBox_TextChanged;
             // 
             // AddLevelAttemptBtn
             // 
@@ -146,11 +148,24 @@
             CancelLevelBtn.UseVisualStyleBackColor = true;
             CancelLevelBtn.Click += CancelLevelBtn_Click;
             // 
+            // ErrorMessageBox
+            // 
+            ErrorMessageBox.AutoSize = true;
+            ErrorMessageBox.ForeColor = Color.Red;
+            ErrorMessageBox.Location = new Point(103, 442);
+            ErrorMessageBox.Name = "ErrorMessageBox";
+            ErrorMessageBox.Size = new Size(55, 25);
+            ErrorMessageBox.TabIndex = 12;
+            ErrorMessageBox.Text = "Error!";
+            ErrorMessageBox.Visible = false;
+            ErrorMessageBox.Click += ErrorMessageBox_Click;
+            // 
             // AddLevelAttempt
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(566, 543);
+            Controls.Add(ErrorMessageBox);
             Controls.Add(CancelLevelBtn);
             Controls.Add(AddLevelAttemptBtn);
             Controls.Add(DateBox);
@@ -184,5 +199,6 @@
         private TextBox DateBox;
         private Button AddLevelAttemptBtn;
         private Button CancelLevelBtn;
+        private Label ErrorMessageBox;
     }
 }

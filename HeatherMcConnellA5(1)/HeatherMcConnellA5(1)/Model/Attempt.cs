@@ -9,6 +9,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace HeatherMcConnellA5_1_.Model
 {
+    /// <summary>
+    /// Attempt class.
+    /// </summary>
     public class Attempt
     {
         public string? FirstName { get; set; }
@@ -19,6 +22,9 @@ namespace HeatherMcConnellA5_1_.Model
 
         public bool IsTimeBelowRecord => Time.HasValue && Time.Value < 120.0m;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Attempt"/> class.
+        /// </summary>
         public Attempt()
         {
 
@@ -60,7 +66,12 @@ namespace HeatherMcConnellA5_1_.Model
             Time = time;
             RunDate = DateTime.Now;
         }
-
+        /// <summary>
+        /// Converts to string.
+        /// </summary>
+        /// <returns>
+        /// A <see cref="System.String" /> that represents this instance.
+        /// </returns>
         public override string ToString()
         {
             return $"{LastName}, {FirstName}, {Score}, {Time}";

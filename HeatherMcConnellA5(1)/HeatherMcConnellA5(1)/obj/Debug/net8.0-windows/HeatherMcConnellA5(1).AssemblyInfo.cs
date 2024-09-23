@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HeatherMcConnellA5(1)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+165bb23283a6a42541c07e8618aad4edb8a09246")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+329b07b83c0502f4dae32c2b500ada8f0b568fdf")]
 [assembly: System.Reflection.AssemblyProductAttribute("HeatherMcConnellA5(1)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HeatherMcConnellA5(1)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

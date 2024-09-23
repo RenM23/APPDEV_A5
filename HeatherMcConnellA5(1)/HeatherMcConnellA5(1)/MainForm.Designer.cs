@@ -33,7 +33,7 @@
             AddAttemptBtn = new Button();
             RemoveAttemptBtn = new Button();
             label1 = new Label();
-            textBox1 = new TextBox();
+            LevelAttemptStatsBox = new TextBox();
             SuspendLayout();
             // 
             // LevelAttemptsLbl
@@ -77,26 +77,28 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(473, 50);
+            label1.Location = new Point(445, 49);
             label1.Name = "label1";
             label1.Size = new Size(169, 25);
             label1.TabIndex = 4;
             label1.Text = "Level Attempt Stats:";
             // 
-            // textBox1
+            // LevelAttemptStatsBox
             // 
-            textBox1.Location = new Point(472, 104);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 5;
+            LevelAttemptStatsBox.Location = new Point(445, 104);
+            LevelAttemptStatsBox.Multiline = true;
+            LevelAttemptStatsBox.Name = "LevelAttemptStatsBox";
+            LevelAttemptStatsBox.ReadOnly = true;
+            LevelAttemptStatsBox.Size = new Size(366, 249);
+            LevelAttemptStatsBox.TabIndex = 5;
+            LevelAttemptStatsBox.TextChanged += LevelAttemptStatsBox_TextChanged;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(893, 540);
-            Controls.Add(textBox1);
+            Controls.Add(LevelAttemptStatsBox);
             Controls.Add(label1);
             Controls.Add(RemoveAttemptBtn);
             Controls.Add(AddAttemptBtn);
@@ -115,6 +117,6 @@
         private Button AddAttemptBtn;
         private Button RemoveAttemptBtn;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox LevelAttemptStatsBox;
     }
 }
