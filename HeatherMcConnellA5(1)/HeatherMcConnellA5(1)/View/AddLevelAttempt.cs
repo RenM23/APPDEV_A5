@@ -29,8 +29,11 @@ namespace HeatherMcConnellA5_1_.View
             myAttemptToAdd = new Attempt();
 
             myAttemptToAdd.FirstName = FirstNameTextBox.Text;
+            myAttemptToAdd.LastName = LastNameTextBox.Text;
+            myAttemptToAdd.Score = int.Parse(ScoreBox.Text);
+            myAttemptToAdd.Time = int.Parse(TimeBox.Text);
+            myAttemptToAdd.RunDate = DateTime.Now;
 
-            //MyItemToAdd.Age = int.Parse(itemAgeEntryBox.Text);
 
            Close();
         }

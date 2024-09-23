@@ -8,5 +8,6 @@ namespace HeatherMcConnellA5_1_.Model
 {
     internal class LevelAttempts
     {
+
     }
 }

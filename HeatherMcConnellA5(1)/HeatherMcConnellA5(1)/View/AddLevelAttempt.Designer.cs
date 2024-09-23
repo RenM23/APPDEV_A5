@@ -33,14 +33,14 @@
             LastNameLbl = new Label();
             LastNameTextBox = new TextBox();
             ScoreLbl = new Label();
-            numericUpDown1 = new NumericUpDown();
+            ScoreBox = new NumericUpDown();
             AttemptTimeLbl = new Label();
-            TimeLbl = new TextBox();
+            TimeBox = new TextBox();
             label1 = new Label();
-            textBox1 = new TextBox();
+            DateBox = new TextBox();
             AddLevelAttemptBtn = new Button();
             CancelLevelBtn = new Button();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ScoreBox).BeginInit();
             SuspendLayout();
             // 
             // FirstNameLbl
@@ -84,14 +84,14 @@
             ScoreLbl.TabIndex = 4;
             ScoreLbl.Text = "Score:";
             // 
-            // numericUpDown1
+            // ScoreBox
             // 
-            numericUpDown1.Location = new Point(235, 213);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.ReadOnly = true;
-            numericUpDown1.Size = new Size(150, 31);
-            numericUpDown1.TabIndex = 5;
-            numericUpDown1.TextAlign = HorizontalAlignment.Center;
+            ScoreBox.Location = new Point(235, 213);
+            ScoreBox.Name = "ScoreBox";
+            ScoreBox.ReadOnly = true;
+            ScoreBox.Size = new Size(150, 31);
+            ScoreBox.TabIndex = 5;
+            ScoreBox.TextAlign = HorizontalAlignment.Center;
             // 
             // AttemptTimeLbl
             // 
@@ -102,12 +102,12 @@
             AttemptTimeLbl.TabIndex = 6;
             AttemptTimeLbl.Text = "Attempt Time:";
             // 
-            // TimeLbl
+            // TimeBox
             // 
-            TimeLbl.Location = new Point(235, 267);
-            TimeLbl.Name = "TimeLbl";
-            TimeLbl.Size = new Size(150, 31);
-            TimeLbl.TabIndex = 7;
+            TimeBox.Location = new Point(235, 267);
+            TimeBox.Name = "TimeBox";
+            TimeBox.Size = new Size(150, 31);
+            TimeBox.TabIndex = 7;
             // 
             // label1
             // 
@@ -118,13 +118,13 @@
             label1.TabIndex = 8;
             label1.Text = "Attempt Date:";
             // 
-            // textBox1
+            // DateBox
             // 
-            textBox1.Location = new Point(235, 322);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 9;
+            DateBox.Location = new Point(235, 322);
+            DateBox.Name = "DateBox";
+            DateBox.ReadOnly = true;
+            DateBox.Size = new Size(150, 31);
+            DateBox.TabIndex = 9;
             // 
             // AddLevelAttemptBtn
             // 
@@ -153,11 +153,11 @@
             ClientSize = new Size(566, 543);
             Controls.Add(CancelLevelBtn);
             Controls.Add(AddLevelAttemptBtn);
-            Controls.Add(textBox1);
+            Controls.Add(DateBox);
             Controls.Add(label1);
-            Controls.Add(TimeLbl);
+            Controls.Add(TimeBox);
             Controls.Add(AttemptTimeLbl);
-            Controls.Add(numericUpDown1);
+            Controls.Add(ScoreBox);
             Controls.Add(ScoreLbl);
             Controls.Add(LastNameTextBox);
             Controls.Add(LastNameLbl);
@@ -165,7 +165,7 @@
             Controls.Add(FirstNameLbl);
             Name = "AddLevelAttempt";
             Text = "AddLevelAttempt";
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ScoreBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -177,11 +177,11 @@
         private Label LastNameLbl;
         private TextBox LastNameTextBox;
         private Label ScoreLbl;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown ScoreBox;
         private Label AttemptTimeLbl;
-        private TextBox TimeLbl;
+        private TextBox TimeBox;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox DateBox;
         private Button AddLevelAttemptBtn;
         private Button CancelLevelBtn;
     }

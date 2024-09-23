@@ -17,6 +17,8 @@ namespace HeatherMcConnellA5_1_.Model
         public decimal? Time { get; set; }
         public DateTime? RunDate { get; set; }
 
+        public bool IsTimeBelowRecord => Time.HasValue && Time.Value < 120.0m;
+
         public Attempt()
         {
 
